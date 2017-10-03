@@ -2,7 +2,6 @@
 package validators
 
 import (
-	//"regexp"
 	"errors"
 	"regexp"
 )
@@ -35,5 +34,5 @@ func CharValidator(val string)(string, error)  {
 		return val, nil
 	}
 
-	return "", errors.New("value should be an integer")
+	return "", errors.New("value should be a non-integer character")
 }

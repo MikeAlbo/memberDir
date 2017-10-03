@@ -23,16 +23,16 @@ func main()  {
 		FirstName: "Michael",
 		LastName: "Albonetti",
 		Email: "malbo24@gmail.com",
-		CellPhone: "901-2181977",
-		BirthDate: "06-25-1984",
+		CellPhone: "1234556789",
+		BirthDate: "12345678",
 	}
 
 	kristy := &memberModel.Member{
-		FirstName: "Kristy",
-		LastName: "Horton",
-		Email: "klh@yahoo.com",
-		CellPhone: "6165761243",
-		BirthDate: "06-10-1983",
+		FirstName: "K",
+		LastName: "H",
+		Email: "hotstuff@yahoo.com",
+		CellPhone: "1234566789",
+		BirthDate: "12345677",
 	}
 
 	moose := &memberModel.Member{
@@ -52,10 +52,10 @@ func main()  {
 	}
 
 	testFamily := &memberModel.Family{
-		Address: "614 blue lake trail",
-		City: "Antioch",
-		State: "TN",
-		Zip: 37013,
+		Address: "123 Tiny Apartment",
+		City: "Boomtown",
+		State: "OI",
+		Zip: 90909,
 		Adults: []memberModel.Member {*michael, *kristy},
 		Children: []memberModel.Member {*moose, *patchy},
 	}
